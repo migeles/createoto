@@ -1,0 +1,56 @@
+[
+    {
+        "type": "Group",
+        "name": "primary components",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "2kHsq684grCSMX5L"
+    },
+    {
+        "type": "Directory",
+        "name": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\hero",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\hero",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "NykJGfRbArEdjKDl",
+        "label": null
+    },
+    {
+        "type": "Directory",
+        "name": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\about",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\about",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "YsZo9zE45S2vdOuV"
+    },
+    {
+        "type": "Directory",
+        "name": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\products",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\products",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "UaFe0IDdsNBztHlC"
+    },
+    {
+        "type": "Directory",
+        "name": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\instagram",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\instagram",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "b9CxOG7lQ5J8paKS"
+    },
+    {
+        "type": "Directory",
+        "name": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\contact",
+        "parent_id": null,
+        "fsPath": "c:\\Users\\kikji\\OneDrive\\Documents\\Next.js projects\\Createoto nov-04 design\\createoto\\app\\components\\contact",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "u4LnWUBjFHXOzNJ8"
+    }
+]

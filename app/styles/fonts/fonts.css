@@ -1,0 +1,35 @@
+@font-face {
+  font-family: bitcrusher;
+  src: url("../../assets/fonts/bitcrusher.otf");
+}
+
+@font-face {
+  font-family: futura-medium;
+  src: url("../../assets/fonts/FuturaStdMedium.otf");
+}
+
+@font-face {
+  font-family: futura-heavy;
+  src: url("../../assets/fonts/FuturaStdHeavy.otf");
+}
+
+@font-face {
+  font-family: futura-bold;
+  src: url("../../assets/fonts/FuturaStdBold.otf");
+}
+
+.bitcrusher {
+  font-family: "bitcrusher";
+}
+
+.futura-medium {
+  font-family: "futura-medium";
+}
+
+.futura-heavy {
+  font-family: "futura-heavy";
+}
+
+.futura-bold {
+  font-family: "futura-bold";
+}

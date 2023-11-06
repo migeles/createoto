@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "app/components/hero"
+    },
+    {
+      "path": "app/components/about"
+    },
+    {
+      "path": "app/components/products"
+    },
+    {
+      "path": "app/components/instagram"
+    },
+    {
+      "path": "app/components/contact"
+    },
+    {
+      "path": "app/assets"
+    },
+    {
+      "path": "app/"
+    },
+  ],
+  "file": [
+	{
+		"path": "app/page"
+	  },
+  ],
+  "settings": {
+    "favorites.sortDirection": "DESC"
+  }
+}

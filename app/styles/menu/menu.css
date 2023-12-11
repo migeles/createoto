@@ -1,0 +1,41 @@
+.header {
+  background-color: #1f1f1f;
+  background: linear-gradient(90deg, #262626 0%, #000000 100%);
+}
+.header .button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .burger {
+  width: 100%;
+}
+.header .burger::after, .header .burger::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+.header .burger::after {
+  top: -5px;
+}
+.header .burger::before {
+  top: 5px;
+}
+.header .burgerActive::after {
+  transform: rotate(45deg);
+  top: -2px;
+}
+.header .burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}/*# sourceMappingURL=menu.css.map */

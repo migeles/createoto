@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import aboutBG from "../../assets/images/about/about bg2.jpg";
+import aboutBG from "../../assets/images/about/about bg2.JPG";
 import { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTransform, useScroll, useMotionValueEvent } from "framer-motion";

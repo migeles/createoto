@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTransform, useScroll, useMotionValueEvent } from "framer-motion";
 
-const picture = () => {
+const Picture = () => {
   const animate = {
     whileHover: {
       scale: 1.15,
@@ -44,4 +44,4 @@ const picture = () => {
   );
 };
 
-export default picture;
+export default Picture;

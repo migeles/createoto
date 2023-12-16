@@ -13,7 +13,7 @@ import {
 } from "framer-motion";
 import { useRef, useEffect } from "react";
 
-const contenttwo = ({ parentRef }) => {
+const Contenttwo = ({ parentRef }) => {
   const { scrollYProgress } = useScroll({
     target: parentRef,
   });
@@ -61,13 +61,13 @@ const contenttwo = ({ parentRef }) => {
 
 function Description({ text, x }) {
   // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const isClient = typeof window !== "undefined";
+  // const isClient = typeof window !== "undefined";
 
-  const style = isClient && window.innerWidth > 640 ? { x: x } : {};
+  // const style = isClient && window.innerWidth > 640 ? { x: x } : {};
   return (
     <motion.div
-      style={style}
-      className='right-shadow-text absolute futura-medium text-white text-xs hidden sm:flex sm:text-[1vw] sm:w-[17vw] text-justify justify-center left-[23vw] sm:left-auto leading-normal top-[40vh] sm:right-[34vw] sm:top-[60vh] -translate-y-2/4'>
+      // style={style}
+      className='right-shadow-text absolute futura-medium text-white text-xs hidden sm:flex sm:text-[1vw] sm:w-[17vw] text-justify justify-center left-[23vw] sm:left-auto leading-normal top-[40vh] sm:right-[34vw] sm:top-[63vh] -translate-y-2/4'>
       <h1>{text}</h1>
     </motion.div>
   );
@@ -86,12 +86,12 @@ function Highlight({ text, top }) {
 
 function ActiveFoam({ x }) {
   // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const isClient = typeof window !== "undefined";
+  // const isClient = typeof window !== "undefined";
 
-  const style = isClient && window.innerWidth > 640 ? { x: x } : {};
+  // const style = isClient && window.innerWidth > 640 ? { x: x } : {};
   return (
     <motion.div
-      style={style}
+      // style={style}
       className='right-shadow-box sm:w-[17vw] futura-heavy flex flex-row text-xs sm:text-[2vh]  gap-1 bg-white text-[#B10DFF] w-auto justify-center rounded-full px-5 sm:px-[3vw] py-[2vh] absolute sm:right-[34vw] left-[8vw] sm:left-auto top-[19vh] sm:top-[50vh] -translate-y-1/3'>
       <span>✦</span>
       <h3>Shine And Protect</h3>
@@ -121,4 +121,4 @@ function ProductImage({ img }) {
     />
   );
 }
-export default contenttwo;
+export default Contenttwo;

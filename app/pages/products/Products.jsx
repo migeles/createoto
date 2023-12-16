@@ -1,8 +1,8 @@
 "use client";
 import { useRef, useEffect } from "react";
 import Title from "./title";
-import ContentOne from "./Content/contentone";
-import ContentTwo from "./Content/contenttwo";
+import ContentOne from "./Content/Contentone";
+import ContentTwo from "./Content/Contenttwo";
 import {
   motion,
   useTransform,

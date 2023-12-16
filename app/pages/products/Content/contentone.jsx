@@ -12,7 +12,7 @@ import {
 } from "framer-motion";
 import { useRef, useEffect } from "react";
 
-const contentone = ({ parentRef }) => {
+const Contentone = ({ parentRef }) => {
   
   const { scrollYProgress } = useScroll({
     target: parentRef,
@@ -62,13 +62,13 @@ const contentone = ({ parentRef }) => {
 
 function Description({ text, x }) {
  
-  const isClient = typeof window !== 'undefined';
+  // const isClient = typeof window !== 'undefined';
 
-  const style = isClient && window.innerWidth > 640 ? { x: x } : {};
+  // const style = isClient && window.innerWidth > 640 ? { x: x } : {};
   return (
     <motion.div
-      style={style}
-      className='right-shadow-text-res absolute futura-medium text-white text-xs hidden sm:flex sm:text-[1vw] sm:w-[17vw] text-justify justify-center left-[23vw] sm:left-auto leading-normal top-[40vh] sm:right-[15vw] sm:top-[45vh] -translate-y-2/4'>
+      // style={style}
+      className='right-shadow-text-res absolute futura-medium text-white text-xs hidden sm:flex sm:text-[1vw] sm:w-[17vw] text-justify justify-center left-[23vw] sm:left-auto leading-normal top-[40vh] sm:right-[15vw] sm:top-[48vh] -translate-y-2/4'>
       <h1>{text}</h1>
     </motion.div>
   );
@@ -87,12 +87,12 @@ function Highlight({ text, top }) {
 
 function ActiveFoam({ x }) {
   
-  const isClient = typeof window !== 'undefined';
-  const style = isClient && window.innerWidth > 640 ? { x: x } : {};
+  // const isClient = typeof window !== 'undefined';
+  // const style = isClient && window.innerWidth > 640 ? { x: x } : {};
   return (
     <motion.div
-      style={style}
-      className='right-shadow-box-res sm:w-[17vw] futura-heavy flex flex-row text-xs sm:text-[2vh]  gap-1 bg-white text-pink w-auto justify-center rounded-full px-5 sm:px-[3vw] py-[2vh] absolute sm:right-[15vw] left-[8vw] sm:left-auto top-[19vh] sm:top-[35vh] -translate-y-1/3'>
+      // style={style}
+      className='right-shadow-box-res sm:w-[17vw] futura-heavy flex flex-row text-xs sm:text-[2vh]  gap-1 bg-white text-pink w-auto justify-center rounded-full px-5 sm:px-[3vw] py-[2vh] absolute sm:right-[15vw] left-[8vw] sm:left-auto top-[19vh] sm:top-[35vh] -translate-y-1/3 '>
       <h3>Active Foam Formula</h3>
       <span> ++</span>
     </motion.div>
@@ -121,4 +121,4 @@ function ProductImage({ img }) {
   );
 }
 
-export default contentone;
+export default Contentone;

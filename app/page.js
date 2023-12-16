@@ -1,9 +1,9 @@
-import Hero from "./pages/hero/hero";
+import Hero from "./pages/hero/Hero";
 import About from "./pages/about/about";
 import Products from "./pages/products/Products";
 import Instagram from "./pages/instagram/container";
 import Contact from "./pages/contact/contact";
-import Navbar from "./pages/navbar/navbar";
+import Navbar from "./pages/navbar/Navbar";
 
 export default function Home() {
   

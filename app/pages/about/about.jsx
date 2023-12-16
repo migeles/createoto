@@ -1,7 +1,7 @@
 "use client"
 
-import Title from './title'
-import Picture from './picture'
+import Title from './Title'
+import Picture from './Picture'
 
 const about = () => {
   return (

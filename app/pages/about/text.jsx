@@ -6,7 +6,7 @@ import { useInView } from "framer-motion";
 
 import { motion } from "framer-motion";
 
-const text = () => {
+const Text = () => {
   const animate = {
     initial: { y: "120%" },
     open1: {
@@ -49,4 +49,4 @@ const text = () => {
   );
 };
 
-export default text;
+export default Text;

@@ -6,7 +6,7 @@ import Logo from "../../assets/images/logo/createoto logo.png";
 import { motion } from "framer-motion";
 import Sidebar from "./sidebar";
 
-const navbar = () => {
+const Navbar = () => {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -28,32 +28,37 @@ const navbar = () => {
   }, []);
 
   useEffect(() => {
-    // Add the .stop-scrolling class to the body
+    // Disable scrolling
     document.body.classList.add("stop-scrolling");
+    document.documentElement.classList.add("stop-scrolling");
 
-    // Remove the .stop-scrolling class after a certain duration (e.g., 3 seconds)
+    // Enable scrolling after 5000 milliseconds (adjust as needed)
     const enableScroll = setTimeout(() => {
       document.body.classList.remove("stop-scrolling");
-    }, 5000); // Adjust the duration as needed
+      document.documentElement.classList.remove("stop-scrolling");
+    }, 5000);
 
-    // Clean up the timeout to avoid memory leaks
-    return () => clearTimeout(enableScroll);
+    return () => {
+      // Cleanup: Enable scrolling and clear the timeout
+      document.body.classList.remove("stop-scrolling");
+      document.documentElement.classList.remove("stop-scrolling");
+      clearTimeout(enableScroll);
+    };
   }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
     return () => {
       window.scrollTo(0, 0);
     };
   }, []);
 
   const [isActive, setIsActive] = useState(false);
-  const pathname = usePathname();
 
-  useEffect(() => {
-    if (isActive) setIsActive(false);
-  }, [pathname]);
+  // useEffect(() => {
+  //   console.log(isActive);
+  //   if (isActive) setIsActive(!isActive);
+  // }, [isActive]);
 
   const animate = {
     initial: { width: "0%" },
@@ -109,4 +114,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

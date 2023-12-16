@@ -1,5 +1,5 @@
 "use client";
-import Text from "./text";
+import Text from "./Text";
 import Image from "next/image";
 import Logo from "../../assets/images/logo/createoto logo.png";
 
@@ -8,7 +8,7 @@ import { useInView } from "framer-motion";
 
 import { motion } from "framer-motion";
 
-const title = () => {
+const Title = () => {
   const animate = {
     initial: { y: "120%" },
     open: {
@@ -54,4 +54,4 @@ const title = () => {
   );
 };
 
-export default title;
+export default Title;

@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const title = () => {
+const Title = () => {
   const animate = {
     initial: { y: "100%" },
     initial1: { x: "-100%" },
@@ -125,4 +125,4 @@ const title = () => {
   );
 };
 
-export default title;
+export default Title;

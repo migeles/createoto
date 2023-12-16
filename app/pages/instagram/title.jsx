@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Picture from "./picture";
+import Picture from "./Picture";
 import Image from "next/image";
 import Logo from "../../assets/images/logo/createoto logo.png";
 import { motion } from "framer-motion";

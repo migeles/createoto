@@ -1,11 +1,11 @@
 "use client";
-import Title from './title'
+import Title from './Title'
 import Slider from './slider'
 import { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { useTransform, useScroll, useMotionValueEvent } from "framer-motion";
 
-const hero = () => {
+const Hero = () => {
   const targetRef = useRef(null);
   
   return (
@@ -16,4 +16,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero

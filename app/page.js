@@ -32,7 +32,7 @@ export default function Home() {
       <Hero />
       <About />
       <Products />
-      <Instagram />
+      {/* <Instagram /> */}
       <Contact />
     </main>
   );

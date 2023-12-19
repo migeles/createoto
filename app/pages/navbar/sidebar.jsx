@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Sidebar = ({ open }) => {
   // Check if window is defined
-  const isClient = typeof window !== 'undefined';
-
+  const isClient = typeof window !== 'null';
+// 
   const sidebarVariants = {
     hidden: {
       x: "0vw",

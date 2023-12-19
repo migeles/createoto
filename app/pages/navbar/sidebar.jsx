@@ -4,8 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Sidebar = ({ open }) => {
   // Check if window is defined
-  const isClient = typeof window !== 'null';
-// 
+
   const sidebarVariants = {
     hidden: {
       x: "0vw",
@@ -13,7 +12,7 @@ const Sidebar = ({ open }) => {
       transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
     },
     visible: {
-      x: isClient && window.innerWidth <= 640 ? "-100vw" : "-28vw",
+      x: "-380px",
       borderRadius: "0% 0% 0% 0%",
       transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
     },
@@ -23,7 +22,7 @@ const Sidebar = ({ open }) => {
     <AnimatePresence>
       {open && (
         <motion.div
-          className='absolute -right-[100vw] sm:-right-[28vw] bg-black bg-opacity-70 sm:bg-opacity-100 sm:w-[28vw] w-screen h-screen z-30'
+          className='absolute -right-[380px] sm:-right-[28vw] bg-black bg-opacity-70 sm:bg-opacity-100 sm:w-[28vw] w-screen h-screen z-30'
           initial='hidden'
           animate='visible'
           exit='hidden'

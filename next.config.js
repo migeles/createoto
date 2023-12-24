@@ -9,7 +9,7 @@ module.exports = {
     remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'scontent.cdninstagram.com',
+          hostname: '**.cdninstagram.com',
         //   port: '',
         //   pathname: '/account123/**',
         },

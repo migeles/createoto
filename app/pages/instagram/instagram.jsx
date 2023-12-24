@@ -13,8 +13,8 @@ export default async function Instagram() {
         if (feed.media_type === 'IMAGE' || feed.media_type === 'CAROUSEL_ALBUM') {
           return (
           
-            <a href="https://www.instagram.com/createoto.official/" key={feed.id} ><div className='h-auto aspect-square ' style={{width: '100%' , position: 'relative'}}>
-              <Image src={feed.media_url} fill={true} alt={feed.caption} className='w-full h-full rounded-lg sm:rounded-3xl object-cover aspect-square object-center hover:w-full brightness-[.90] contrast-[1.1]'/>
+            <a href="https://www.instagram.com/createoto.official/" key={feed.id} ><div className='h-auto aspect-square ' style={{width: '100%', height: '100%', position: 'relative'}}>
+              <Image src={feed.media_url} fill={true} alt={feed.caption} unoptimized className='w-full h-full rounded-lg sm:rounded-3xl object-cover aspect-square object-center hover:w-full brightness-[.90] contrast-[1.1]'/>
               {/* <p>{feed.caption}</p> */}
             </div>
             </a>

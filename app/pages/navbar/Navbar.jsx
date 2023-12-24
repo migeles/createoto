@@ -88,8 +88,7 @@ const Navbar = () => {
         <Image
           src={Logo}
           layout='fill'
-          objectFit='contain'
-          className='pic-shine'
+          className='pic-shine object-contain'
           alt='logo'
         />
       </motion.div>
